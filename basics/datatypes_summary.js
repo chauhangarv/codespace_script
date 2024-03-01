@@ -44,3 +44,35 @@ dataypeof null -> object
 datatypeof function -> functionobject
 datatypeof non-primitive datatypes -> objects
 */
+
+
+
+
+// ----------------------------------------------------------------------------
+
+
+// Memory :-
+
+// Stack (Primitive) -->
+// hum primitive datatypes value Stack Memory m hi jaate h agr unme changes krte h to unke copy m changes hota h...
+
+// Heap (Non-Primitive)  -->
+// saare non-primitive datatypes Heap Memory m jaate h aur unme changes main function m hi hota h...
+
+let myName = "IronMan";
+anotherName = "Tony Stark";
+
+console.log(anotherName);
+console.log(myName);
+
+let nameOne = {
+    name: "SpiderMan",
+    id: "Peter Parker",
+}
+
+let anotherOne = nameOne;
+
+anotherOne.id = "Miles Morales";
+
+console.log(anotherOne.id);
+console.log(nameOne.id);
