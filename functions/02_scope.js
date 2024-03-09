@@ -42,3 +42,20 @@ if (true) {
 }
 // console.log(name);
 
+
+
+
+
+// ++++++++++++++++++++ interesting +++++++++++++++++++++++++++++++++++++++
+
+console.log(addOne(5))    // function ke data ko phle declare krne ko Hoisting bolte h
+
+function addOne(num){
+    return num + 1;
+}
+
+
+addTwo(5)                    // variables m store hue data ko phle declare nhi krskte h...
+const addTwo = function(num){
+    return num + 2
+}
